@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.musicshopguitar.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Заголовок -->
+        <TextView
+            android:id="@+id/textViewWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="84dp"
+            android:layout_marginBottom="24dp"
+            android:background="#1E0C3E"
+            android:fontFamily="sans-serif"
+            android:text="Добро пожаловать в &quot;Магазин гитар&quot;"
+            android:textAlignment="center"
+            android:textColor="#E7E7E7"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <!-- Поле для ввода имени пользователя -->
+        <EditText
+            android:id="@+id/editTextUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Введите имя пользователя"
+            android:inputType="text"
+            android:padding="12dp"
+            android:backgroundTint="#391E40" />
+
+        <!-- Кнопка входа -->
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:padding="12dp"
+            android:text="Войти"
+            android:backgroundTint="#1E0C3E"
+            android:textColor="#FFFFFF" />
+
+        <!-- Текст для ссылки на регистрацию -->
+        <TextView
+            android:id="@+id/textViewNotRegistered"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Еще не зарегистрированы?"
+            android:textAlignment="center"
+            android:textColor="#391E40"
+            android:textSize="16sp" />
+
+        <!-- Кнопка регистрации -->
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:padding="12dp"
+            android:text="Зарегистрироваться"
+            android:backgroundTint="#1E0C3E"
+            android:textColor="#FFFFFF" />
+
+        <!-- Кнопка справки -->
+        <Button
+            android:id="@+id/buttonHelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#1E0C3E"
+            android:padding="12dp"
+            android:text="Справка"
+            android:textColor="#FFFFFF" />
+
+        <!-- Изображение -->
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/s_guitar_image" />
+    </LinearLayout>
+</RelativeLayout>

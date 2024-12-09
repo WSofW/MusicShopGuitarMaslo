@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.musicshopguitar">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MusicShopGuitar"
+        tools:targetApi="31">
+
+        <!-- Главная активность (LoginActivity) -->
+        <activity
+            android:name="com.example.musicshopguitar.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Экран регистрации -->
+        <activity
+            android:name="com.example.musicshopguitar.RegistrationActivity"
+            android:exported="true" />
+
+        <!-- Основная активность (MainActivity) -->
+        <activity
+            android:name="com.example.musicshopguitar.MainActivity"
+            android:exported="false" />
+
+        <!-- Экран отображения продуктов (ProductsActivity) -->
+        <activity
+            android:name="com.example.musicshopguitar.ProductsActivity"
+            android:exported="false" />
+
+        <!-- Экран корзины (CartActivity) -->
+        <activity
+            android:name="com.example.musicshopguitar.CartActivity"
+            android:exported="false" />
+
+        <!-- Экран справки (HelpActivity) -->
+        <activity
+            android:name="com.example.musicshopguitar.HelpActivity"
+            android:exported="true" />
+
+    </application>
+
+</manifest>

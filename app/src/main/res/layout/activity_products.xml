@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/categoryTitleTextView"
+        android:layout_width="399dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="10dp"
+        android:background="#1E0C3E"
+        android:gravity="center"
+        android:text="Категории товаров"
+        android:textColor="#E7E7E7"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <!-- Кнопка Корзина -->
+    <Button
+        android:id="@+id/openCartButton"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#1E0C3E"
+        android:text="Моя корзина"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/productRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false" />
+</LinearLayout>

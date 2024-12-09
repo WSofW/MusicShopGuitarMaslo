@@ -1,0 +1,54 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="389dp"
+        android:layout_height="66dp"
+        android:background="#1E0C3E"
+        android:gravity="center"
+        android:text="Корзина покупок"
+        android:textColor="#EBE9E9"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/cartBalanceTextView"
+        android:layout_width="383dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="fill"
+        android:text="Баланс покупателя: 0.00₽"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textColor="#170437"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/totalCostTextView"
+        android:layout_width="396dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="fill"
+        android:text="Всего к  оплате: 0.00₽"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textColor="#170437"
+        android:textSize="16sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cartRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/checkoutButton"
+        android:layout_width="380dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#1E0C3E"
+        android:text="Оплатить" />
+</LinearLayout>
